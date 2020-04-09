@@ -1,0 +1,18 @@
+{
+  "name": "animation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm-run-all --parallel scss browserSync",
+    "scss": "node-sass --watch ./scss/main.scss -o css",
+    "browserSync": "browser-sync start --server --port 5000 --files -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.13.1",
+    "npm-run-all": "^4.1.5"
+  }
+}
